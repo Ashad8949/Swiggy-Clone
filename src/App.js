@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// Header
+// - img
+// - Nav
 
-function App() {
+// Body
+// - Search
+// - Restaurant Card
+
+// Footer
+
+const Header = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJPJAmkd2OhV1zOoUt6_qW1Mh1uc4qaoWkQ&usqp=CAU"
+          alt="logo"
+        />
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+const AppLayout = () => {
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
+};
+
+export default AppLayout;
